@@ -15,8 +15,8 @@ defmodule ElixirTest.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :httpotion, :cowboy, :plug],
-      mod: {HexVersion.Api, []}
+    [applications: [:logger, :cowboy, :plug],
+      mod: {ElixirTest.Api, []}
     ]
   end
 
