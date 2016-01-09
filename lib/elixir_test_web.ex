@@ -19,4 +19,10 @@ defmodule ElixirTest.Web do
     |> send_resp(200, "ok")
     |> halt
   end
+
+  match _ do
+    conn
+    |> send_resp(404, "Nothing to see here folks.")
+    |> halt
+  end
 end
